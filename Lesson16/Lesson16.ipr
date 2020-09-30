@@ -14,6 +14,9 @@
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8 (1)" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+  </component>
   <component name="libraryTable">
     <library name="com.github.javafaker:javafaker:1.0.2" type="repository">
       <properties maven-id="com.github.javafaker:javafaker:1.0.2" />
