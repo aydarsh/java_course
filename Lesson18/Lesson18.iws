@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="40751298-14b9-44f7-bc86-787b3ff49638" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +30,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8 (1)" />
+  </component>
   <component name="ProjectId" id="1hwykWuLNQzw63uLitOLSWN1MxO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,7 +49,7 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -125,26 +131,30 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1600938758412" />
-    <state width="1493" height="318" key="GridCell.Tab.0.bottom" timestamp="1601131917374">
+    <state x="490" y="106" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1601734576890">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="318" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1601131917374" />
-    <state width="1493" height="318" key="GridCell.Tab.0.center" timestamp="1601131917374">
+    <state x="490" y="106" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.834@0.0.1536.834" timestamp="1601734576890" />
+    <state width="1493" height="318" key="GridCell.Tab.0.bottom" timestamp="1601735830563">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="318" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1601131917374" />
-    <state width="1493" height="318" key="GridCell.Tab.0.left" timestamp="1601131917374">
+    <state width="1493" height="318" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1601735830563" />
+    <state width="1493" height="318" key="GridCell.Tab.0.center" timestamp="1601735830563">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="318" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1601131917374" />
-    <state width="1493" height="318" key="GridCell.Tab.0.right" timestamp="1601131917374">
+    <state width="1493" height="318" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1601735830563" />
+    <state width="1493" height="318" key="GridCell.Tab.0.left" timestamp="1601735830562">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="318" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1601131917374" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1600936955803">
+    <state width="1493" height="318" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1601735830562" />
+    <state width="1493" height="318" key="GridCell.Tab.0.right" timestamp="1601735830563">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1600936955803" />
+    <state width="1493" height="318" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1601735830563" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1601735632041">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1601735632041" />
     <state x="498" y="309" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1600936949708">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

@@ -1,20 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Lesson18" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="Lesson18" target="8" />
+    </bytecodeTargetLevel>
+  </component>
   <component name="InspectionProjectProfileManager">
     <profile version="1.0">
       <option name="myName" value="Project Default" />
     </profile>
     <version value="1.0" />
   </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Lesson18.iml" filepath="$PROJECT_DIR$/Lesson18.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8 (1)" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+  </component>
+  <component name="libraryTable">
+    <library name="Maven: com.github.javafaker:javafaker:1.0.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.github.mifmif:generex:1.0.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/mifmif/generex/1.0.2/generex-1.0.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/mifmif/generex/1.0.2/generex-1.0.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: dk.brics.automaton:automaton:1.11-8">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.commons:commons-lang3:3.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.yaml:snakeyaml:android:1.23">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.23/snakeyaml-1.23-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.23/snakeyaml-1.23-sources.jar!/" />
+      </SOURCES>
+    </library>
   </component>
 </project>
