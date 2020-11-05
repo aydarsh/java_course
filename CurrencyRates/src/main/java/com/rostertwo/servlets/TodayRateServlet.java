@@ -1,5 +1,7 @@
 package com.rostertwo.servlets;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.rostertwo.OpenExchangeRates;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -9,8 +11,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.rostertwo.OpenExchangeRates;
+import java.time.Instant;
+import java.time.ZoneId;
 
 public class TodayRateServlet extends HttpServlet {
     private static final String KEY = "YOUR_KEY";
@@ -34,9 +36,12 @@ public class TodayRateServlet extends HttpServlet {
         ObjectMapper mapper = new ObjectMapper();
         OpenExchangeRates openExchangeRates = mapper.readValue(responseStream, OpenExchangeRates.class);
 
-        // Finally we have the response
+        // Set response attributes
         req.setAttribute("rate", openExchangeRates.rates.RUB);
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("currencyToday.jsp");
+        req.setAttribute("date", Instant.ofEpochSecond(openExchangeRates.timestamp).atZone(ZoneId.of("UTC")).toLocalDate());
+
+        // Finally we have the response
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("currencyRateView.jsp");
         requestDispatcher.forward(req, resp);
     }
 }

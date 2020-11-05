@@ -11,4 +11,13 @@
         <servlet-name>today-rate</servlet-name>
         <url-pattern>/today</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>archived-rate</servlet-name>
+        <servlet-class>com.rostertwo.servlets.ArchivedRateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>archived-rate</servlet-name>
+        <url-pattern>/archive</url-pattern>
+    </servlet-mapping>
 </web-app>

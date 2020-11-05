@@ -1,9 +1,10 @@
 package com.rostertwo;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class OpenExchangeRates {
-    public String disclaimer;
-    public String license;
-    public int timestamp;
+    public long timestamp;
     public String base;
     public Rates rates;
 }
