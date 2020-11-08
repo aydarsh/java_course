@@ -13,7 +13,7 @@
         Double rate = (Double) request.getAttribute("rate");
         DecimalFormat df = new DecimalFormat("#.##");
         String formattedRate = df.format(rate);
-        LocalDate date = (LocalDate) request.getAttribute("date");
+        String date = (String) request.getAttribute("date");
         if (rate != null) {
             out.println("<div class=\"row\">");
             out.println("<div class=\"col\">");

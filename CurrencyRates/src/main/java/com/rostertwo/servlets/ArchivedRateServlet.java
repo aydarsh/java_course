@@ -1,7 +1,7 @@
 package com.rostertwo.servlets;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.rostertwo.OpenExchangeRates;
+import com.rostertwo.ExchangeRatesAPI;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -14,7 +14,6 @@ import java.net.URL;
 import java.time.LocalDate;
 
 public class ArchivedRateServlet extends HttpServlet {
-    private static final String KEY = "YOUR_KEY";
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -24,10 +23,10 @@ public class ArchivedRateServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String date = req.getParameter("date");
+        LocalDate date = LocalDate.parse(req.getParameter("date"));
 
         // Create a neat value object to hold the URL
-        URL url = new URL("https://openexchangerates.org/api/historical/" + date + ".json?app_id=" + KEY);
+        URL url = new URL("https://api.exchangeratesapi.io/" + date + "?base=USD");
 
         // Open a connection
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -39,13 +38,15 @@ public class ArchivedRateServlet extends HttpServlet {
         // Make the request
         InputStream responseStream = connection.getInputStream();
 
-        // Convert the response body InputStream to OpenExchangeRate using Jackson
+        // Convert the response body InputStream to ExchangeRatesAPI using Jackson
         ObjectMapper mapper = new ObjectMapper();
-        OpenExchangeRates openExchangeRates = mapper.readValue(responseStream, OpenExchangeRates.class);
+        ExchangeRatesAPI exchangeRatesAPI = mapper.readValue(responseStream, ExchangeRatesAPI.class);
+
+        // Set response attributes
+        req.setAttribute("rate", exchangeRatesAPI.rates.RUB);
+        req.setAttribute("date", exchangeRatesAPI.date);
 
         // Finally we have the response
-        req.setAttribute("rate", openExchangeRates.rates.RUB);
-        req.setAttribute("date", LocalDate.parse(date));
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("currencyRateView.jsp");
         requestDispatcher.forward(req, resp);
     }
