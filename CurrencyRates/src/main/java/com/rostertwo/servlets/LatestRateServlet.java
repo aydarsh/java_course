@@ -2,6 +2,7 @@ package com.rostertwo.servlets;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.rostertwo.ExchangeRatesAPI;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -11,22 +12,14 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.time.LocalDate;
 
-public class ArchivedRateServlet extends HttpServlet {
+public class LatestRateServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("currencyArchiveDateForm.jsp");
-        requestDispatcher.forward(req, resp);
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        LocalDate date = LocalDate.parse(req.getParameter("date"));
 
         // Create a neat value object to hold the URL
-        URL url = new URL("https://api.exchangeratesapi.io/" + date + "?base=USD");
+        URL url = new URL("https://api.exchangeratesapi.io/latest?base=USD");
 
         // Open a connection
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
